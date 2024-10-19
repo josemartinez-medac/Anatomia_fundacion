@@ -1,0 +1,246 @@
+
+.container-all-muestras {
+    margin: 2%;
+    margin-top: 5%;
+    padding: 3%;
+    background-color: rgb(241, 238, 238);
+    min-height: 100vh; 
+    flex-direction: column;
+    border-radius: 10px;
+}
+.tituloInforme{
+  display: flex;
+  justify-content: space-between;
+}
+
+.muestras-h2{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-top: 15px!important;
+  text-align: left;
+}
+.muestras-h2 h2{
+  font-size: 20px;
+  color: #004676;
+  margin-left: 30px;
+} 
+
+/********************************/
+.divContenido{
+  display: flex;
+  flex-direction: column;
+  
+  & div{
+    justify-content: space-around;
+  }
+}
+.textAreaEdited{
+  background: #fff!important;
+}
+.divContenido label {
+  background-color: #8fc6ea;
+  padding: 6px 12px;
+  border-radius: 30px;
+  margin-right: 5px;
+}
+.fila{
+  display: flex;
+  flex-wrap: wrap;
+}
+.fila label{
+  font-size: 12px;
+  width: 250px;
+  height: 20px;
+}
+.fila1{
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}
+.fila2{
+  width: 50%;
+  justify-content: space-around;
+}
+.fila3{
+  width: 50%;
+  justify-content: space-around;
+  & label, textarea{
+    width: 100%;
+  }
+  & textarea{
+    height: 120px;
+    background: #f6f6f6;
+    color: black;
+  }
+}
+.editar{
+  margin-left: 15px;
+}
+.displayNone{
+  display: none;
+}
+.displayInline{
+  display: inline;
+}
+
+.introducir input, .introducir select{
+  width: 120px; /* Ajusta según sea necesario */
+  font-size: 12px;
+  height: 20px; /* Aumenta la altura para mejor legibilidad */
+  margin: 0 0 10px 0;
+  background: rgb(202, 225, 240);
+  color: #004676;
+  text-align: center;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0 10px; /* Ajusta el padding horizontal */
+}
+.introducir select{
+  width: 99%;
+}
+.form-muestras {
+    margin-top: 20px;
+    background-color: #fff;
+    min-height: 100vh; 
+    border-radius: 10px;
+    padding: 50px;
+  }
+  .form-muestras label{
+    color: #004676;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 30px;
+  }
+  .input-muestras{
+     border-radius: 5px;
+     width: 100%;
+     padding: 10px;
+     box-sizing: border-box;
+     margin: 10px;
+     border: none;
+     border: solid 1px #ccc;
+
+  }
+  input[type="file"]{
+    border: none !important;
+  }
+  .muestras-h2 h2{
+    color: #004676;
+  }
+  .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  .btn-group {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    
+    
+  }
+  .btn-group .btn ,.btn-informe{
+    position: relative;
+    flex: 1 1 auto;
+    background-color: #004776e0;
+    color: rgb(255, 254, 253);
+  }
+  
+  .btn-group .btn:not(:first-child) {
+    margin-left: -1px;
+  }
+  
+  .btn-group .btn:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .btn-group .btn:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .btn-group .btn:hover,
+  .btn-group .btn:focus, .btn-informe {
+    z-index: 1;
+    background-color: #004676;
+  }
+
+  .btn-muestras{
+    margin: auto;
+  }
+
+  .container-textarea-muestras {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container-textarea-muestras textarea{
+  width: 350px;
+  margin-left: 5px;
+}
+
+.container-textarea-muestras > div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.container-textarea-muestras > div:last-child {
+    margin-right: 0;
+}
+
+.pitufo {
+  margin-top: 10px;
+  width: 100%;
+  height: 300px;
+  /*resize: none;*/
+}
+
+@media print {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  };
+  .btn-muestras {
+    display: none; /* Oculta los botones en la impresión */
+  }
+
+  /* Personaliza otros elementos para la impresión, si es necesario */
+  body {
+    font-size: 12pt;
+    margin-top: 0;
+  }
+
+  .container-all-muestras {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
+  /* Esconde otros elementos que no quieras imprimir */
+  header, footer, nav, aside {
+    display: none;
+  }
+}
+.oculto{display: none;}
+.bg-red{
+  background-color: crimson!important;
+}
+
+.bg-green{
+  background: forestgreen!important;
+}
